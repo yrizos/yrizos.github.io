@@ -1,0 +1,108 @@
+:root {
+    --color: #E8DDCB;
+    --bg-color: #16213E;
+    --a-color-visted: #CDB380;
+    --section-links-a-color: #fff;
+    --section-links-a-bg-color: #0F3460;
+    --section-links-a-bg-color-hover: #533483;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+
+    background-color: var(--bg-color);
+    color: var(--color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+html,
+body {
+    height: 100%;
+    min-height: 100%;
+}
+
+.container {
+    padding: 2rem 1rem;
+    max-width: 720px;
+}
+
+.container p {
+    color: var(--color);
+}
+
+a {
+    color: var(--color);
+}
+
+a:visited {
+    color: var(--a-color-visted);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.information {
+    text-align: center;
+}
+
+.information h1 {
+    color: #ffffff;
+}
+
+.information h1 span {
+    color: var(--a-color-visted);
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+}
+
+.links a,
+.links a span,
+.links a svg {
+    color: var(--section-links-a-color);
+    line-height: 24px;
+}
+
+.links a {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 8px;
+    text-decoration: none;
+    background-color: var(--section-links-a-bg-color);
+    padding: 16px 24px;
+    border-radius: 4px;
+}
+
+.links a:hover {
+    background-color: var(--section-links-a-bg-color-hover);
+}
+
+.links a svg {
+    line-height: 24px;
+    width: 24px;
+    height: 24px;
+}
+
+@media only screen and (min-width: 576px) {
+    .links {
+        flex-direction: row;
+    }
+
+    .links a {
+        font-size: 0.95em;
+    }
+}
