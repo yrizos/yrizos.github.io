@@ -7,13 +7,27 @@
   --section-links-a-color: #fff;
   --section-links-a-bg-color: #393E46;
   --section-links-a-bg-color-hover: #00ADB5;
+
+  --font-size: 1rem;
+  --line-height: 1.5rem;
+
+  --h1-font-size: 2rem;
+  --h1-line-height: 2rem;
+
+  --padding: 16px;
+
+  --image-width: 192px;
+}
+
+html {
+  font-size: 16px;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: var(--font-size);
+  line-height: var(--line-height);
 
   background-color: var(--bg-color);
   color: var(--color);
@@ -49,7 +63,7 @@ a:visited {
 .container {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: var(--padding);
 }
 
 .information {
@@ -57,8 +71,8 @@ a:visited {
 }
 
 .information h1 {
-  font-size: 2rem;
-  line-height: 2.25rem;
+  font-size: var(--h1-font-size);
+  line-height: var(--h1-font-size);
   color: var(--h1-color);
 }
 
@@ -77,7 +91,8 @@ a:visited {
 .links a span,
 .links a svg {
   color: var(--section-links-a-color);
-  line-height: 24px;
+  font-size: var(--font-size);
+  line-height: var(--padding);
 }
 
 .links a {
@@ -87,7 +102,7 @@ a:visited {
   gap: 8px;
   text-decoration: none;
   background-color: var(--section-links-a-bg-color);
-  padding: 16px 16px;
+  padding: var(--padding);
   border-radius: 4px;
 }
 
@@ -96,40 +111,18 @@ a:visited {
 }
 
 .links a svg {
-  line-height: 24px;
-  width: 24px;
-  height: 24px;
+  line-height: var(--padding);
+  width: var(--padding);
+  height: var(--padding);
 }
 
 .avatar {
   text-align: center;
-  margin-bottom: -24px;
+  margin-bottom: calc(var(--padding) * -1);
 }
 
 .avatar img {
-  width: 96px;
-  height: 96px;
+  width: var(--image-width);
+  height: var(--image-width);
   border-radius: 50%;
-}
-
-@media only screen
-and (min-width: 520px) {
-  .avatar img {
-    width: 192px;
-    height: 192px;
-  }
-
-  body {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
-  .information h1 {
-    font-size: 2.5rem;
-    line-height: 2.75rem;
-  }
-
-  .links {
-    flex-direction: row;
-  }
 }
