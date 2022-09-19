@@ -9,7 +9,6 @@
 
   <meta property="og:title" content="Yannis Rizos">
 
-  <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <!-- Place favicon.ico in the root directory -->
 
@@ -19,16 +18,18 @@
         rel="stylesheet">
 
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 
 <div class="container">
+  <section class="avatar">
+    <img src="android-chrome-512x512.png" alt="Avatar of Yannis Rizos"/>
+  </section>
   <section class="information">
     <h1>Hello, <span>how can I help?</span></h1>
-    <p>Hi, I'm Yannis Rizos, a software engineer from Greece.</p>
+    <p>Hi, I'm Yannis Rizos, a software engineer from Athens, Greece.</p>
 
     <p>I have been building web applications for about two decades, and I have industry experience in learning
       technologies, reservation engines, online marketplaces and e-commerce.</p>
@@ -79,6 +80,24 @@
     </a>
   </section>
 </div>
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Athens, Greece"
+    },
+    "jobTitle": "Software Engineer",
+    "name": "Yannis Rizos",
+    "worksFor": {
+      "@type": "Organization",
+      "url": "https://www.epignosishq.com/",
+      "name": "Epignosis"
+    }
+  }
+</script>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y8WBYJ64Z"></script>
