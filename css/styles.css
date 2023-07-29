@@ -1,22 +1,22 @@
 :root {
-  --color: #eee;
-  --bg-color: #222831;
-  --a-color-visited: #fff;
+  --color: #6B5D63;
+  --bg-color: #DAD6CA;
+  --a-color-visited: #5F9583;
   --h1-color: #fff;
-  --h1-color-alt: #00ADB5;
+  --h1-color-alt: #5F9583;
   --section-links-a-color: #fff;
-  --section-links-a-bg-color: #393E46;
-  --section-links-a-bg-color-hover: #00ADB5;
+  --section-links-a-bg-color: #6B5D63;
+  --section-links-a-bg-color-hover: #5F9583;
 
-  --font-size: 1rem;
+  --font-size: 0.85rem;
   --line-height: 1.5rem;
 
-  --h1-font-size: 2rem;
-  --h1-line-height: 2rem;
+  --h1-font-size: 1.5rem;
+  --h1-line-height: 1.5rem;
 
-  --padding: 24px;
+  --padding: 18px;
 
-  --image-width: 192px;
+  --image-width: 128px;
 }
 
 html {
