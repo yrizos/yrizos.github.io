@@ -20,7 +20,7 @@
 }
 
 html {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 body {
@@ -33,7 +33,7 @@ body {
   color: var(--color);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: top;
   align-items: center;
 }
 
@@ -46,6 +46,9 @@ body {
 .container {
   padding: 2rem 1rem;
   max-width: 720px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding);
 }
 
 .container p {
@@ -58,12 +61,6 @@ a {
 
 a:visited {
   color: var(--a-color-visited);
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  gap: var(--padding);
 }
 
 .information {
@@ -128,6 +125,10 @@ a:visited {
 }
 
 @media only screen and (min-width: 480px) {
+  body {
+    justify-content: center;  
+  }
+
   .links {
     flex-direction: row;
   }
@@ -135,12 +136,12 @@ a:visited {
 
 @media only screen and (min-width: 520px) {
   html {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 
 @media only screen and (min-width: 768px) {
   html {
-    font-size: 20px;
+    font-size: 22px;
   }
 }
